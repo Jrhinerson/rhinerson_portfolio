@@ -3,24 +3,24 @@
 
         <!-- Logo -->
         <div>
-            <a href="#hero" class="cursor-pointer">
+            <button class="cursor-pointer">
                 <img ngSrc="Logo.png" alt="Jordan Rhinerson Logo" width="50" height="50" />
-            </a>
+            </button>
         </div>
 
         <!-- Menu -->
-        <ul class="hidden md:flex text-xl font-medium">
+        <ul class="hidden md:flex text-xl font-medium px-4 gap-6">
             <li>
-                <a href="#hero">Home</a>
+                <button class="cursor-pointer hover:text-white" (click)="scrollToElement('hero')">Home</button>
             </li>
             <li>
-                <a href="#focus">Focus</a>
+                <button class="cursor-pointer hover:text-white" (click)="scrollToElement('skills')">Skills</button>
             </li>
             <li>
-                <a href="#work">Work</a>
+                <button class="cursor-pointer hover:text-white" (click)="scrollToElement('about')">About</button>
             </li>
             <li>
-                <a href="#contact">Contact</a>
+                <button class="cursor-pointer hover:text-white" (click)="scrollToElement('projects')">Projects</button>
             </li>
         </ul>
 
@@ -33,18 +33,18 @@
         <!-- Social icons -->
         <div class="hidden lg:flex fixed flex-col top-[35%] left-0">
             <ul>
-                <li class="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#0072b1]">
-                    <a class="flex justify-between items-center w-full text-gray-300" href="https://www.linkedin.com/in/jordan-rhinerson/" target="_blank" rel="noopener">
+                <li class="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[0px] duration-300 bg-[#0072b1]">
+                    <a class="flex justify-between items-center w-full text-gray-300 px-4" href="https://www.linkedin.com/in/jordan-rhinerson/" target="_blank" rel="noopener">
                         LinkedIn
                     </a>
                 </li>
-                <li class="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#333333]">
-                    <a class="flex justify-between items-center w-full text-gray-300" href="https://github.com/Jrhinerson" target="_blank" rel="noopener">
+                <li class="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[0px] duration-300 bg-[#333333]">
+                    <a class="flex justify-between items-center w-full text-gray-300 px-4" href="https://github.com/Jrhinerson" target="_blank" rel="noopener">
                         Github
                     </a>
                 </li>
-                <li class="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-darkorange">
-                    <a class="flex justify-between items-center w-full text-gray-300" href="assets/resume.pdf" target="_blank" rel="noopener">
+                <li class="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[0px] duration-300 bg-darkorange">
+                    <a class="flex justify-between items-center w-full text-gray-300 px-4" href="assets/resume.pdf" target="_blank" rel="noopener">
                         Resume
                     </a>
                 </li>
